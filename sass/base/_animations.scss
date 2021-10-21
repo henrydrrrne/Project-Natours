@@ -1,0 +1,46 @@
+/* for the animation */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+        /* +ve value means it goes to right, while negative means it goes to the left */
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* with 0 its going to look the exact way it looks right now */
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+        /* +ve value means it goes to right, while negative means it goes to the left */
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* with 0 its going to look the exact way it looks right now */
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+        /* +ve value means it goes to right, while negative means it goes to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        /* with 0 its going to look the exact way it looks right now */
+    }
+}
